@@ -1,0 +1,228 @@
+.resumeSection {
+  min-height: calc(100vh - 80px);
+  padding: 4rem 0;
+  background: var(--color-background);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  color: var(--color-primary);
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 0 0 1px rgba(255, 204, 204, 0.3), 
+              0 0 0 1px rgba(204, 255, 204, 0.3),
+              0 0 0 1px rgba(204, 204, 255, 0.3);
+}
+
+.downloadBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 0 0 1px rgba(255, 204, 204, 0.5), 
+              0 0 0 1px rgba(204, 255, 204, 0.5),
+              0 0 0 1px rgba(204, 204, 255, 0.5),
+              0 10px 25px rgba(38, 38, 38, 0.5);
+}
+
+.section {
+  background: var(--color-surface);
+  border-radius: 20px;
+  padding: 3rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 5px 20px rgba(38, 38, 38, 0.3);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 10px 30px rgba(38, 38, 38, 0.5);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-light);
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+.sectionHeader h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.content {
+  color: var(--color-accent);
+}
+
+.item {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-light);
+}
+
+.item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.item h3 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.date {
+  color: var(--color-accent);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.details {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.details li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.details li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.skillCategory h3 {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillTags span {
+  background: var(--color-light);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skillTags span:hover {
+  background: var(--color-accent);
+  color: var(--color-background);
+  transform: translateY(-2px);
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.achievements li::before {
+  content: '🏆';
+  position: absolute;
+  left: 0;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .resumeSection {
+    padding: 2rem 0;
+  }
+
+  .section {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .item h3 {
+    font-size: 1.25rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .downloadBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

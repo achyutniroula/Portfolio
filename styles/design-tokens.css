@@ -1,0 +1,22 @@
+:root {
+  /* Core Obsidian Palette */
+  --color-background: #121212;
+  --color-surface: #121212;
+  --color-border: #262626;
+  --color-primary: #aaaaaa;
+  --color-secondary: #ffffff;
+  --color-accent: #cccccc;
+  --color-muted: #a3a3a3;
+
+  /* Typography */
+  --font-base: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Motion */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+
+  /* Radii (intentionally restrained) */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}

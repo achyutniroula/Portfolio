@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://api.github.com/users/achyutniroula/repos?per_page=100&sort=updated\")",
+      "Bash(python3 -c \"import json,sys; repos=json.load\\(sys.stdin\\); [print\\(f'{r[\\\\\"name\\\\\"]} | {r[\\\\\"description\\\\\"]} | {r[\\\\\"html_url\\\\\"]} | {r[\\\\\"language\\\\\"]} | {r[\\\\\"topics\\\\\"]} | stars:{r[\\\\\"stargazers_count\\\\\"]} | fork:{r[\\\\\"fork\\\\\"]}'\\) for r in repos]\")",
+      "Bash(curl -s \"https://api.github.com/users/Vector17103/repos?per_page=100&sort=updated\")",
+      "Bash(file \"D:/Projects/achyut-portfolio/public/images/projects/\"*.jpg)",
+      "Bash(dir \"D:\\\\Projects\\\\achyut-portfolio\\\\public\\\\images\\\\projects\\\\\")",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(firebase hosting:sites:list)",
+      "Bash(firebase hosting:channel:list)",
+      "Bash(firebase deploy *)"
+    ]
+  }
+}

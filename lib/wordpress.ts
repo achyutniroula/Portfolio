@@ -120,6 +120,17 @@ export const getMockBlogPosts = (): BlogPost[] => [
 
 export const getMockProjects = (): Project[] => [
   {
+    id: 10,
+    title: { rendered: 'Resume Optimization Engine' },
+    content: {
+      rendered: `<p>A Flask + Claude API tool that ingests a resume PDF and job description, then produces a laser-targeted, ATS-optimized LaTeX resume ready to compile on Overleaf — preserving factual accuracy while rewriting impact, metrics, and keywords to match the role.</p>`,
+    },
+    acf: {
+      technologies: 'Python · Flask · Claude API · pdfplumber · LaTeX',
+      language: 'Python',
+    },
+  },
+  {
     id: 9,
     title: { rendered: 'LearnOne — AI-Powered Personal Educator' },
     content: {
